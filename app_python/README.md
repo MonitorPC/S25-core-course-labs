@@ -51,3 +51,13 @@ docker pull monitorpc/moscow-timezone:rootless # for rootless version
 ```bash
 docker run -d -p 5000:5000 monitorpc/moscow-timezone   
 ```
+
+## Unit Tests
+Unit tests are implemented to ensure the application's functionality. To run the tests, execute:
+```sh
+python -m unittest test_app.py
+```
+
+### Implemented Tests
+- **`test_moscow_time_route`**: Ensures that the root route (`/`) returns a successful response (`200 OK`) and contains the expected text.
+
